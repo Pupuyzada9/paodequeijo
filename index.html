@@ -154,8 +154,9 @@
   /* Profit */
   .profit{background:linear-gradient(180deg,#FFF1C9,var(--cream))}
   .calc{background:#fff;border-radius:18px;padding:20px;box-shadow:0 10px 30px rgba(138,75,31,.12)}
-  .calc-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line);font-weight:600}
+  .calc-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);font-weight:600}
   .calc-row:last-of-type{border-bottom:0}
+  .calc-row span:last-child{flex:none;text-align:right}
   .calc-row.total{font-size:18px;font-weight:800;color:var(--green-dark)}
   .calc small{display:block;color:var(--muted);font-size:12px;margin-top:10px}
 
@@ -239,8 +240,7 @@
   <div class="wrap center">
     <div class="eyebrow">🧀 +150 Receitas Lucrativas de Pão de Queijo</div>
     <h1>Aprenda a fazer pão de queijo recheado <span class="h1-num">que vende</span> <span>e comece sua renda extra com pouco investimento</span></h1>
-    <p class="sub">São <strong>+150 receitas</strong> salgadas e doces. No nosso exemplo, vendendo 5 pacotes por semana, dá <strong>até R$ 640/mês*</strong>.</p>
-    <p class="btn-sub" style="margin:-14px 0 18px">*Valor ilustrativo. Veja o cálculo completo mais abaixo.</p>
+    <p class="sub">São <strong>+150 receitas</strong> salgadas e doces, com quantidades exatas, para você vender na vizinhança, no trabalho e no WhatsApp.</p>
 
     <div class="hero-art">
       <div class="hero-glow" aria-hidden="true"></div>
@@ -378,14 +378,16 @@
   <div class="wrap">
     <div class="center">
       <p class="kicker">Faça as contas</p>
-      <h2>Um ingrediente barato, um produto que vende</h2>
-      <p class="lead">Exemplo de cálculo que você aprende a fazer no material:</p>
+      <h2>Quanto um pão de queijo pode render por mês?</h2>
+      <p class="lead">Ingrediente barato, produto que todo mundo ama. Veja um exemplo de cálculo que você aprende a fazer no material:</p>
     </div>
     <div class="calc">
       <div class="calc-row"><span>Custo médio por unidade recheada</span><span>R$ 0,90</span></div>
       <div class="calc-row"><span>Preço de venda por unidade</span><span>R$ 2,50</span></div>
+      <div class="calc-row"><span>Lucro por unidade</span><span>R$ 1,60</span></div>
       <div class="calc-row"><span>Lucro por pacote de 20 unidades</span><span>R$ 32,00</span></div>
-      <div class="calc-row total"><span>Vendendo 5 pacotes por semana</span><span>R$ 640/mês</span></div>
+      <div class="calc-row"><span>Vendendo 3 pacotes por dia, 22 dias no mês</span><span>66 pacotes</span></div>
+      <div class="calc-row total"><span>Lucro no mês</span><span>R$ 2.112/mês</span></div>
       <small>* Valores ilustrativos. Custos e preços variam por região, ingredientes e recheio. Seus resultados dependem do seu esforço e das suas vendas.</small>
     </div>
   </div>
