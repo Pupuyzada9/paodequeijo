@@ -1,0 +1,7 @@
+# Produto pago e bônus: NÃO publicar (repositório público)
+*.pdf
+bonus/
+
+# Imagens originais (o site usa as versões otimizadas em img/)
+/Imgherosection.png
+/Provasocial.jpg
