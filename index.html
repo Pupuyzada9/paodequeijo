@@ -548,6 +548,18 @@ src="https://www.facebook.com/tr?id=3566195150208292&ev=PageView&noscript=1"
       document.querySelectorAll(".js-checkout").forEach(function(a){ a.href = url; });
     }
 
+    // Meta Pixel: InitiateCheckout no clique do botão de compra.
+    // Espera até 300ms para o evento sair antes de abrir o checkout.
+    document.querySelectorAll(".js-checkout").forEach(function(a){
+      a.addEventListener("click", function(e){
+        if (typeof fbq !== "function" || e.ctrlKey || e.metaKey || e.shiftKey) return;
+        e.preventDefault();
+        var go = function(){ location.href = a.href; };
+        try { fbq("track", "InitiateCheckout", {content_name: "+150 Receitas Lucrativas de Pão de Queijo", value: 19.90, currency: "BRL"}); } catch(err) {}
+        setTimeout(go, 300);
+      });
+    });
+
     // Botão fixo aparece depois do hero
     var sticky = document.getElementById("sticky");
     var hero = document.querySelector(".hero");
